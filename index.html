@@ -25,7 +25,7 @@
 </ul>
 
 <br>
-<h6>Understanding Events and People</h6>
+<h2>Understanding Events and People</h2>
 <p>
 Mixpanel has two fundamental spheres:
 <ul>
@@ -33,10 +33,7 @@ Mixpanel has two fundamental spheres:
 	<li>People: the users who use your application</li>
 </ul>
 <br>
-Both 'spheres' have properties which describe them (a 'sign up' can come from facebook; a 'user' can be 22 years old)
-<br>
-Everything that gets sent to Mixpanel is either an event, or a person, or a property underneath. Mixpanel can accept data from anywhere, but it must fit into one of these two paradigms. Therefore every product that uses Mixpanel to track its data needs to be adapted to fit into this model.
-
+Both 'spheres' have properties which describe them (a 'sign up' can come from facebook; a 'user' can be 22 years old). Everything that gets sent to Mixpanel is either an event, or a person, or a property underneath. Mixpanel can accept data from anywhere, but it must fit into one of these two paradigms. Therefore every product that uses Mixpanel to track its data needs to be adapted to fit into this model.
 <br>
 Mixpanel is the leading analytics platform because we allow users to close the loop on their analytics strategies. That is, you actively test your hypotheses and act on them directly within the platform. The two ways you can practice closed-loop analytics are:
 <ul>
@@ -46,6 +43,7 @@ Mixpanel is the leading analytics platform because we allow users to close the l
 
 Closed loop analytics can only be practice based on the events, properties, and people attributes you have sent to Mixpanel.
 
+<br>
 <h6>Implementation Spec</h6>
 An Implementation Spec is where you keep track of the events, people, and properties that you are sending to Mixpanel. It's essentially a project plan -- a document you can hand off to your developers to implement, as well as a reference guide for what you've implemented and what you'd like to add or remove in the future.
 
@@ -55,23 +53,24 @@ Here is an example of a very detailed spec for a standard customer in the 'Video
 	
 Here is a blank Implementation Spec for you to fill out, once you've identified your KPI's:
 
-
+<!-- Insert blank Implementation Spec or Spec Builder (also within product... need to figure out progress from Emmett) -->
 
 Some guidelines for customizing your own spec:
-
-		DO create your own events
-		DO add a ton of properties to better describe the events
-		DO make it clear to the developer what values get filled in
-		DO add platform-specific events (if flows are different on iOS & Android)
+<ul>
+		<li>DO create your own events</li>
+		<li>DO add a ton of properties to better describe the events</li>
+		<li>DO make it clear to the developer what values get filled in</li>
+		<li>DO add platform-specific events (if flows are different on iOS & Android)</li>
 		
 
-		DO NOT break the 'people prop', 'event prop' structure
-		DO NOT implement Mixpanel before making a suitable implementation spec
-		DO NOT using confusing, long, or obtuse event/property names
-		DO NOT track EVERY single interaction in your app
-		DO NOT only track 'page view' events
+		<li>DO NOT break the 'people prop', 'event prop' structure</li>
+		<li>DO NOT implement Mixpanel before making a suitable implementation spec</li>
+		<li>DO NOT using confusing, long, or obtuse event/property names</li>
+		<li>DO NOT track EVERY single interaction in your app</li>
+		<li>DO NOT only track 'page view' events</li>
+</ul>
 
-4. Implementation Support
+<h6>Implementation Support</h6>
 
 	Developer Docs: https://mixpanel.com/help/reference
 	Support@mixpanel.com
