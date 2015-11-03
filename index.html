@@ -24,7 +24,7 @@
 <li>Executive (if applicable): approve implementation spec, articulate business/technology needs (beyond core analytics strategy), consult on spec</li>
 </ul>
 
-
+<br>
 <h6>Understanding Events and People</h6>
 <p>
 Mixpanel has two fundamental spheres:
@@ -34,20 +34,17 @@ Mixpanel has two fundamental spheres:
 </ul>
 <br>
 Both 'spheres' have properties which describe them (a 'sign up' can come from facebook; a 'user' can be 22 years old)
+<br>
+Everything that gets sent to Mixpanel is either an event, or a person, or a property underneath. Mixpanel can accept data from anywhere, but it must fit into one of these two paradigms. Therefore every product that uses Mixpanel to track its data needs to be adapted to fit into this model.
 
-Everything that gets sent to Mixpanel is either an event, or a person, or a property underneath. Mixpanel can accept data from anywhere, but it must fit into one of these two paradigms.
+<br>
+Mixpanel is the leading analytics platform because we allow users to close the loop on their analytics strategies. That is, you actively test your hypotheses and act on them directly within the platform. The two ways you can practice closed-loop analytics are:
+<ul>
+	<li>Notifications: to PEOPLE based on their properties</li>
+	<li>A/B tests: to PEOPLE, also based on their properties</li>
+</ul>
 
-(therefore) every product that uses Mixpanel to track its data needs to be adapted to fit into this model
-
-
-Similarly, Mixpanel has two entities it can send out:
-
-	- Notifications: to PEOPLE based on their properties
-
-	- A/B tests: to PEOPLE, also based on their properties
-
-
-(therefore) every things Mixpanel sends out is based on what you have told us about your users.
+Closed loop analytics can only be practice based on the events, properties, and people attributes you have sent to Mixpanel.
 
 <h6>Implementation Spec</h6>
 An Implementation Spec is where you keep track of the events, people, and properties that you are sending to Mixpanel. It's essentially a project plan -- a document you can hand off to your developers to implement, as well as a reference guide for what you've implemented and what you'd like to add or remove in the future.
