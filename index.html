@@ -7,7 +7,106 @@
     <script src="https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.js"></script>
   </head>
   <body class="mixpanel-platform-body">
-    <h1>Hello, World!</h1>
+    <h1>Getting Started with Mixpanel</h1>
+    
+    <p> A comprehensive guide for kicking off your Mixpanel instance for new customers.</p>
+    
+<h6> Roles and Responsibilities </h6>
+<p>In order to have a successful Mixpanel launch, you'll need to understand the different responsibilities and tasks needed before you have a tailored analytics instance for your business. Below are the tasks and roles that commonly assume each piece of the project.</p>
+
+<ul>
+  <li>Product Manager: formalize scope of project (via spec), determine KPIs, provisioning access, learn Mixpanel core-reports</li>
+  <li>Marketing: consult on spec (people!), articulate marketing needs, author notifications, learn (basic) Mixpanel reports, connect acquisition data (if available)</li>
+  <li>Developer: implementing mixpanel (dev/prod), testing implementation (live view), accountable to implementation spec</li>
+<li>Analyst (if applicable): learn core-mixpanel reports and capabilities</li>
+<li>Executive (if applicable): approve implementation spec, articulate business/technology needs (beyond core analytics strategy), consult on spec</li>
+</ul>
+
+<h6>Understanding Events and People</h6>
+<p>
+Mixpanel has two fundamental spheres:
+<ul>
+  <li>Events: the things people do in your app</li>
+	<li>People: the users who use your application</li>
+</ul>
+<br>
+Both 'spheres' have properties which describe them (a 'sign up' can come from facebook; a 'user' can be 22 years old)
+
+Everything that gets sent to Mixpanel is either an event, or a person, or a property underneath. Mixpanel can accept data from anywhere, but it must fit into one of these two paradigms.
+
+(therefore) every product that uses Mixpanel to track its data needs to be adapted to fit into this model
+
+
+Similarly, Mixpanel has two entities it can send out:
+
+	- Notifications: to PEOPLE based on their properties
+
+	- A/B tests: to PEOPLE, also based on their properties
+
+
+(therefore) every things Mixpanel sends out is based on what you have told us about your users.
+
+<h6>Implementation Spec</h6>
+An Implementation Spec is where you keep track of the events, people, and properties that you are sending to Mixpanel. It's essentially a project plan -- a document you can hand off to your developers to implement, as well as a reference guide for what you've implemented and what you'd like to add or remove in the future.
+
+Here is an example of a very detailed spec for a standard customer in the 'Videos + Content' space. You'll see that they first identify their KPI's, build out their implementation plan based on events and properties as discussed above, and include links to Mixpanel's documentation to guide the developers: 
+
+	https://docs.google.com/spreadsheets/d/1kR5xO_lrpu6aPE9x3J6TJ5IKmKl5KBCccSisMhyYPJI/edit#gid=0
+	
+Here is a blank Implementation Spec for you to fill out, once you've identified your KPI's:
+
+
+
+Some guidelines for customizing your own spec:
+
+		DO create your own events
+		DO add a ton of properties to better describe the events
+		DO make it clear to the developer what values get filled in
+		DO add platform-specific events (if flows are different on iOS & Android)
+		
+
+		DO NOT break the 'people prop', 'event prop' structure
+		DO NOT implement Mixpanel before making a suitable implementation spec
+		DO NOT using confusing, long, or obtuse event/property names
+		DO NOT track EVERY single interaction in your app
+		DO NOT only track 'page view' events
+
+4. Implementation Support
+
+	Developer Docs: https://mixpanel.com/help/reference
+	Support@mixpanel.com
+
+	FAQ: https://mixpanel.com/help/questions/
+
+	Mixpanel University: https://mixpanel.com/learn/segmentation
+
+
+Contact your SE for question on historical data, integrations, or any advanced product functions 
+
+
+
+5. The Game Plan:
+
+Provision Access (PM) => Finish Spec (PM & MKT) => Test implementation (dev) => Implement on production (dev)  ... => Data Review (PM & MKT)
+
+(typical timeline 1-4 weeks, depending on resources)
+
+
+6. Data review:
+
+You can opt to have a data review in which a Mixpaneler will:
+		- look over your implementation
+		- make any recommendations (based on our knowledge of analytics)
+		- help you build any core reports
+		- train a broader audience on how to use Mixpanel
+
+    
+    
+    
+    
+    
+    
+    
     <script>
       // Run queries and display results here
     </script>
